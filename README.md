@@ -33,3 +33,50 @@ Function: `year_population(country_name)`
 
 ```python
 data = year_population('Aruba')
+
+2️⃣ Split Data
+
+Function: data_split(df)
+
+Divides data into features (X) and target (y)
+
+Splits into training and testing sets:
+
+test_size = 0.2
+
+random_state = 42
+
+(X_train, y_train), (X_test, y_test) = data_split(data)
+
+3️⃣ Train Linear Regression Model
+
+Function: train_linear_model(X_train, y_train)
+
+Fits a Linear Regression model on the training data
+
+model = train_linear_model(X_train, y_train)
+
+4️⃣ Evaluate Model
+
+Function: evaluate_model(model, X_test, y_test)
+
+Uses Mean Squared Error (MSE) to measure performance
+
+mse = evaluate_model(model, X_test, y_test)
+print("Mean Squared Error:", mse)
+
+Installation
+
+Clone the repository and install required dependencies:
+
+git clone <repository-url>
+cd world-population-prediction
+pip install pandas scikit-learn
+
+Future Improvements
+
+Implement more advanced regression models (Polynomial Regression, Random Forest, etc.)
+
+Provide confidence intervals for predictions
+
+Visualize population trends with plots
